@@ -1,0 +1,47 @@
+<h3>{{LeagueName}}</h3>
+
+<br />
+<form>
+    <p>Season starts: {{ SeasonStart }} &nbsp; </p>
+
+
+        <div class="container" [ngSwitch]="CurrentRole*10">
+            <div *ngSwitchCase=10>Head Referee</div>
+            <div *ngSwitchCase=20>Referee</div>
+            <div *ngSwitchCase=30>Scorekeeper</div>
+            <div *ngSwitchCase=40>Admin</div>
+            <div *ngSwitchDefault>End User</div>
+        </div>
+        <br/>
+
+
+    <p style="font-size:large;margin-left:50px;">Game:
+    <select (change)="onSchedChange($event.target.value)">
+        <option *ngFor="let currentRow of MySchedule" value={{currentRow.id}}>
+            {{ currentRow.HomeTeam +" vs "+ currentRow.AwayTeam }}
+        </option>
+    </select>
+    </p>
+
+    <p class="form-group"  style="font-size:large;margin-left:50px;width:350px;">
+          <label for="HomeTeam" style="float:left;" >{{HomeTeam}}</label>
+              <input type="number" style="width:80px;float:right;text-align:right;"
+              (input)="HomeScore = $event.target.value"
+              class="form-control" id="HomeGoals" [value]="HomeScore">
+
+    </p>
+  <br/>
+    <p class="form-group"  style="font-size:large;margin-left:50px;width:350px;">
+        <label for="AwayTeam">{{AwayTeam}}    </label>
+        <input type="number" style="width:80px;float:right;text-align:right;"
+          (input)="AwayScore = $event.target.value"
+          class="form-control" id="AwayGoals" [value]="AwayScore">
+    </p>
+
+
+
+    <button type="button" (click)="onRecordScores()" style="font-size:large;margin-left:50px;">Record Scores</button>
+
+
+</form>
+

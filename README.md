@@ -1,7 +1,7 @@
 # Angular Succinctly
 This is the companion repo for *Angular Succinctly* by Joseph D. Booth. Published by Syncfusion.
 
-[![cover](https://github.com/SyncfusionSuccinctlyE-Books/Angular-Succinctly/blob/master/cover.png)](https://www.syncfusion.com/ebooks)
+[![cover](https://github.com/SyncfusionSuccinctlyE-Books/Angular-Succinctly/blob/master/cover.png)](https://www.syncfusion.com/ebooks/angular-succinctly)
 
 This repository contains the source files for the Soccer Dashboard application.
 <p>To build the application after downloading the files, perform the following steps.</p>

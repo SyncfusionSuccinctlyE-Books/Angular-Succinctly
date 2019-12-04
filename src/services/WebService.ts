@@ -1,6 +1,6 @@
 /*
   * WebService
-  * Joe Booth:  Angular 2 Succinctly
+  * Joe Booth:  Angular Succinctly
  */
 import { Injectable } from '@angular/core';
 import { Http, Response} from '@angular/http';

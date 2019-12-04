@@ -6,8 +6,7 @@ import { Component } from '@angular/core';         // Component metadata
 import { ViewEncapsulation } from '@angular/core'; // Encapsulation enum
 import { SoccerService } from '../services/soccerService';
 import { Title } from '@angular/platform-browser';
-import { Ranking } from '../interfaces/rankings';
-import { Schedule } from '../interfaces/schedule';
+import { Schedule } from '../interfaces/Schedule';
 import { WebService } from '../services/WebService';
 
 

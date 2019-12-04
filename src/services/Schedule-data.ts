@@ -3,8 +3,8 @@
  * Joe Booth:  Angular Succinctly
  */
 
-import {Schedule} from '../interfaces/schedule';
-import {Team} from '../interfaces/teams';
+import {Schedule} from '../interfaces/Schedule';
+import {Team} from '../interfaces/Teams';
 
 export
   const SEASON_SCHEDULE: Schedule[] = [
